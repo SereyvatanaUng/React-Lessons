@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700;900&display=swap');
+
+/* ---------- CSS reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ---------- Start here ---------- */
+
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: lawngreen;
+}
+
+.container {
+  background-color: palevioletred;
+  width: 60vw;
+  height: 80vh;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-header {
+  font-weight: 900;
+  border: 1px solid black;
+  padding: 1rem;
+  margin-top: 0.5em;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./TaskCreate.css";
 
 function TaskCreate({ onCreate }) {
   const [title, setTitle] = useState("");
@@ -16,10 +17,10 @@ function TaskCreate({ onCreate }) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="input-form">
         <label>Title</label>
         <input value={title} onChange={handleChange} />
-        <button>Add</button>
+        <button>+</button>
       </form>
     </div>
   );
