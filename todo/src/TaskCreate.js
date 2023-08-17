@@ -18,8 +18,10 @@ function TaskCreate({ onCreate }) {
   return (
     <div>
       <form onSubmit={handleSubmit} className="input-form">
-        <label>Title</label>
-        <input value={title} onChange={handleChange} />
+        <div className="">
+          <label>Title</label>
+          <input value={title} onChange={handleChange} />
+        </div>
         <button>+</button>
       </form>
     </div>

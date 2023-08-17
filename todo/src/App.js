@@ -11,15 +11,21 @@ function App() {
   };
 
   return (
-    <div className="background">
-      <div className="container">
-        <div className="header-container">
-          <h1 className="todo-header">Todo List</h1>
-        </div>
-        <TaskCreate onCreate={createTask} />
-      </div>
+    <div className="container">
+      <Header />
+
+      <TaskCreate onCreate={createTask} />
     </div>
   );
 }
+
+function Header() {
+  return(
+  <div className="header">
+    <h1 className="todo-header">Todo List</h1>
+  </div>);
+}
+
+function TaskShow() {}
 
 export default App;
