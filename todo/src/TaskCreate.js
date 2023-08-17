@@ -12,12 +12,12 @@ function TaskCreate({ onCreate }) {
     e.preventDefault();
     onCreate(title);
     setTitle("");
-    console.log(title);
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="input-form">
+      <h3>Add a Task</h3>
+      <form onSubmit={handleSubmit}>
         <div className="">
           <label>Title</label>
           <input value={title} onChange={handleChange} />
