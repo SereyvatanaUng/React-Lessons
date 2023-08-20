@@ -1,6 +1,6 @@
 import { useState } from "react";
-import TaskCreate from "./TaskCreate";
-import TaskList from "./TaskList";
+import TaskCreate from "./components/TaskCreate";
+import TaskList from "./components/TaskList";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -23,10 +23,7 @@ function App() {
   };
 
   const createTask = (title) => {
-    const updatedTasks = [
-      ...tasks,
-      { id: Math.round(Math.random() * 9999), title },
-    ];
+    const updatedTasks = [...tasks, { id: Date.now(), title }];
     setTasks(updatedTasks);
   };
 
